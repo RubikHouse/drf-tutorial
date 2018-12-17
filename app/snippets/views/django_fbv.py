@@ -5,6 +5,11 @@ from rest_framework.parsers import JSONParser
 from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer
 
+__all__ = (
+    'snippet_list',
+    'snippet_detail',
+)
+
 
 @csrf_exempt
 def snippet_list(request):
